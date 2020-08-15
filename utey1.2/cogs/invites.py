@@ -13,8 +13,10 @@ class invite(commands.Cog):
 
     @commands.command()
     async def invite(self, ctx):
-        link = await ctx.channel.create_invite(max_age=300)
+        link = await ctx.channel.create_invite()
         await ctx.send(link)
+        await ctx.message.delete()
+
 
 def setup(bot):
     bot.add_cog(invite(bot))
