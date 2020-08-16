@@ -18,16 +18,21 @@ class info(commands.Cog):
         '`invite` - quickly create an invite link.\n'
         '`info` - some facts and info about Utey.', inline=False)
         embed.add_field(name='Moderation:', value=
-        '`ban <user>` - use to ban a user.\n'
-        )
+        '`ban <user>` - use to ban a user.\n', inline=False)
+        embed.add_field(name='Fun:', value=
+        '`fact` - fetch a random fact from r/facts.', inline=False)
+        
         embed.set_footer(text='For more info message senshi#0001 on discord.')
         await ctx.send(embed=embed)
 
-
+    @commands.command()
     async def info(self, ctx):
+        amount = len(ctx.bot.guilds)
+
         embed=discord.Embed()
         embed.set_author(name='Utey statistics' ,icon_url='https://cdn.discordapp.com/attachments/700737308189523969/743932076256133261/oRNl8yW.png')   
-        embed.add_field(name='Servers:',value=len(self.bot.guilds), inline=False)
+        embed.add_field(name='Servers:',value='Currently I\'m on ' + str(amount) + ' servers.', inline=False)
+        embed.add_field(name='Code:',value='[My code](https://github.com/ssenshi/Utey1.2) is and always will remain public.', inline=False)
         embed.set_footer(text='For more info message senshi#0001 on discord.')
         await ctx.send(embed=embed)
     
