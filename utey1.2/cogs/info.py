@@ -12,15 +12,18 @@ class info(commands.Cog):
         embed=discord.Embed()
         embed.set_author(name='Utey Bot help page' ,icon_url='https://cdn.discordapp.com/attachments/744238704914202764/744238756974035064/info.png')   #Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
         embed.add_field(name='Utility:',value=
-        '`help` - you\'re here! More info on my [discord](https://discord.gg/vzVmhFB).\n' +
-        '`announce <channel> <role [-n if none]> <message>` - send an announcement.\n' +
-        '`ping` - get the bot ping (response time).\n' +
+        '`help` - you\'re here! More info on my [discord](https://discord.gg/vzVmhFB).\n' 
+        '`announce <channel> <role [-n if none]> <message>` - send an announcement.\n' 
+        '`userinfo <member>` - displays basic information about a user.\n' 
+        '`ping` - get the bot ping (response time).\n' 
         '`invite` - quickly create an invite link.\n'
         '`info` - some facts and info about Utey.', inline=False)
         embed.add_field(name='Moderation:', value=
         '`ban <user>` - use to ban a user.\n', inline=False)
         embed.add_field(name='Fun:', value=
-        '`fact` - fetch a random fact from r/facts.', inline=False)
+        '`fact` - fetch a random fact from r/facts.\n'
+        '`meme` - fetch a random mem from the top of r/memes.\n'
+        '`rick` - rickroll a [discord](https://www.youtube.com/watch?v=dQw4w9WgXcQ) member.\n', inline=False)
         
         embed.set_footer(text='For more info message senshi#0001 on discord.')
         await ctx.send(embed=embed)
