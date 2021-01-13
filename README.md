@@ -1,9 +1,9 @@
-# Utey v1.3
+ # Utey v1.3
 Utey is a multi-purpose utility bot. It contains many fun commands while also being able to create custom embeded messages. It was created for the needs of Medieval Vanilla, but over now over 15 server owners have invited Utey into their community.
 
 ### Commands
 
-`;embed <#channel> <@ping (-n if none) <Subject>` - Create custom embeds, send them to your desired channel and ping the roles you want.                 
+> `;embed <#channel> <@ping (-n if none) <Subject>` - Create custom embeds, send them to your desired channel and ping the roles you want.                 
 `;poll <question>` - Create a simple poll, Utey will react with the *Thumbs up*, *Thumbs down* and *Confused* reactions.            
 `;userinfo <@player>` - Displays helpful information about a server member.                                           
 `;status` - Check if the Discord servers are working correctly.                                                                                        
