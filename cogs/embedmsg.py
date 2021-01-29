@@ -7,14 +7,14 @@ class embedmsg(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def announce(self, ctx, chnl, tag, *, msg):
+    async def announce(self, ctx, chnl, tag, topic, *, msg):
 
         channel = ctx.channel.id = chnl[2:-1]
         author = ctx.message.author
 
         embed=discord.Embed()
         embed.set_author(name=ctx.guild ,icon_url=ctx.guild.icon_url)   
-        embed.add_field(name='Announcement:',value=msg, inline=False)
+        embed.add_field(name=topic,value=msg, inline=False)
         embed.set_footer(text='For more info message ' + str(author)[:-5] + ' or one of the staff members here on discord.')
 
         await ctx.send(embed=embed)
